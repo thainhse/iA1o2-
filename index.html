@@ -19,21 +19,21 @@
             margin: 30px auto;
             background-color: #fff;
             border-radius: 12px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             overflow: hidden;
         }
 
         .header {
             background-color: #ff9800;
             color: #fff;
-            padding: 40px 20px;
+            padding: 20px 10px;
             text-align: center;
             border-bottom: 5px solid #e68900;
         }
 
         .header h1 {
             margin: 0;
-            font-size: 2.5em;
+            font-size: 1.5em;
             font-weight: bold;
         }
 
@@ -50,7 +50,7 @@
             margin-bottom: 10px;
             border-bottom: 2px solid #ff9800;
             padding-bottom: 5px;
-            font-size: 1.8em;
+            font-size: 1.3em;
         }
 
         .section p.description {
@@ -109,28 +109,42 @@
         .two-boxes {
             display: flex;
             justify-content: space-between;
-            gap: 20px;
+            gap: 15px;
             margin-top: 40px;
         }
 
         .box {
-            flex: 1;
+            flex: 1; 
+            max-width: 300px;
             background-color: #fff;
-            border: 1px solid #ddd;
+            border: 2px solid #e3e3e3;
             border-radius: 10px;
             padding: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
         .box:hover {
             transform: translateY(-5px);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
         }
+
+        .box-content {
+            display: flex;
+            align-items: center;
+            gap:5px;
+        }
+
+        .box-content h4 {
+            margin-left: 5px;
+            font-size: 1em;
+            color: #333;
+        }
+
         .box h3 {
             margin-top: 0;
             color: #ff9800;
-            border-bottom: 2px solid #ff9800;
-            padding-bottom: 5px;
+            padding-bottom: 0;
+            margin-bottom: 0;
         }
     </style>
 </head>
@@ -144,12 +158,11 @@
             </div>
             <div class="section">
                 <h2>Title</h2>
-                <p class="description">IA1702</p>
+                <h3> IA1702</h3>
             </div>
             <div class="section">
                 <h2>Case Info</h2>
                 <p class="description">IA1702</p>
-
             </div>
             <div class="section">
                 <h2>Recommend</h2>
@@ -157,12 +170,16 @@
             </div>
             <div class="two-boxes">
                 <div class="box">
-                    <h3>Tactic</h3>
-                    <h4> Reconnaissance</h4>
+                    <div class="box-content">
+                        <h3>Tactic:</h3>
+                        <h4>Reconnaissance</h4>
+                    </div>
                 </div>
                 <div class="box">
-                    <h3>Technique</h3>
-                    <h4>Scanning</h4>
+                    <div class="box-content">
+                        <h3>Technique:</h3>
+                        <h4>Scanning</h4>
+                    </div>
                 </div>
             </div>
         </div>
