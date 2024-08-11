@@ -17,24 +17,37 @@
         .container {
             max-width: 900px;
             margin: 30px auto;
-            background-color: #fff;
+            background-color: #ffffff;
             border-radius: 12px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             overflow: hidden;
         }
 
         .header {
-            background-color: #ff9800;
+            background-color: #0e3fa6;
             color: #fff;
             padding: 20px 10px;
-            text-align: center;
-            border-bottom: 5px solid #e68900;
+            border-bottom: 5px solid #0e3fa6;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .header .spacer {
+            flex: 1;
         }
 
         .header h1 {
             margin: 0;
             font-size: 1.5em;
             font-weight: bold;
+            text-align: center;
+            flex-grow: 2;
+        }
+
+        .logo {
+            width: 110px;
+            height: auto;
         }
 
         .content {
@@ -46,11 +59,11 @@
         }
 
         .section h2 {
-            color: #ff9800;
+            color: #0e3fa6;
             margin-bottom: 10px;
-            border-bottom: 2px solid #ff9800;
             padding-bottom: 5px;
             font-size: 1.3em;
+            border-bottom: 2px solid #0e3fa6;
         }
 
         .section p.description {
@@ -70,16 +83,16 @@
             text-align: center;
             font-size: 2em;
             font-weight: bold;
-            color: #e68900;
+            color: #0e3fa6;
             margin-bottom: 40px;
         }
 
         .footer {
-            background-color: #ff9800;
+            background-color: #0e3fa6;
             color: #fff;
             text-align: center;
             padding: 20px;
-            border-top: 5px solid #e68900;
+            border-top: 5px solid #0e3fa6;
         }
 
         .footer p {
@@ -93,7 +106,7 @@
             margin: 20px 0;
             font-size: 1em;
             color: #fff;
-            background-color: #ff9800;
+            background-color: #0e3fa6;
             border: none;
             border-radius: 5px;
             text-align: center;
@@ -102,7 +115,7 @@
         }
 
         .button:hover {
-            background-color: #e68900;
+            background-color: #0e3fa6;
             transform: scale(1.05);
         }
 
@@ -116,7 +129,7 @@
         .box {
             flex: 1; 
             max-width: 300px;
-            background-color: #fff;
+            background-color: #ffffff;
             border: 2px solid #e3e3e3;
             border-radius: 10px;
             padding: 20px;
@@ -142,23 +155,56 @@
 
         .box h3 {
             margin-top: 0;
-            color: #ff9800;
+            color: #0e3fa6;
             padding-bottom: 0;
             margin-bottom: 0;
+        }
+
+        
+        .title-section {
+            position: relative;
+            display: flex;
+            align-items: center;
+            margin-left: 0;
+        }
+
+        .title-section h2 {
+            margin-right: 10px;
+            color: #0e3fa6; 
+            border-bottom: none; 
+        }
+
+        .title-section h3 {
+            margin: 0;
+            font-size: 1.2em;
+            color: #333; 
+        }
+
+        .title-section::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 2px;
+            background-color: #0e3fa6; 
+            position: absolute;
+            bottom: -5px; 
+            left: 0;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="header">
+            <div class="spacer"></div>
             <h1>SOAR AUTOMATION</h1>
+            <img src="https://daihoc.fpt.edu.vn/re.mkt/images/logo-white.png" alt="Company Logo" class="logo">
         </div>
         <div class="content">
             <div class="section soar-automation">
             </div>
-            <div class="section">
-                <h2>Title</h2>
-                <h3> IA1702</h3>
+            <div class="section title-section">
+                <h2>Title:</h2>
+                <h3>IA1702</h3>
             </div>
             <div class="section">
                 <h2>Case Info</h2>
